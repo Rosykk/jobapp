@@ -1,0 +1,16 @@
+CREATE TABLE ip_adresses (
+  id SERIAL PRIMARY KEY,
+  ip_adress VARCHAR(45) UNIQUE NOT NULL,
+  data_source VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE urls (
+  id SERIAL PRIMARY KEY,
+  url TEXT UNIQUE NOT NULL,
+  data_source VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE data_sources (
+  id SERIAL PRIMARY KEY,
+  data_source_name VARCHAR(50) UNIQUE NOT NULL
+);
